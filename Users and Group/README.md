@@ -2,33 +2,33 @@
 
 # To see total number of users use following command
 
-  [vagrant@localhost ~]$ ls -l /home/
+      [vagrant@localhost ~]$ ls -l /home/
 
-  total 0
+      total 0
 
-  drwx------. 4 vagrant vagrant 154 Oct 15 17:45 vagrant
+      drwx------. 4 vagrant vagrant 154 Oct 15 17:45 vagrant
 
 # To add user use useradd command
 
-  [vagrant@localhost ~]$ useradd suman
-  -bash: /usr/sbin/useradd: Permission denied
-  [vagrant@localhost ~]$ sudo useradd suman
-  [vagrant@localhost ~]$ ls -l /home/
-  total 0
-  drwx------. 2 suman   suman    62 Oct 15 18:43 suman
-  drwx------. 4 vagrant vagrant 154 Oct 15 17:45 vagrant
-  [vagrant@localhost ~]$ sudo useradd tom
-  [vagrant@localhost ~]$ ls -l /home/
-  total 0
-  drwx------. 2 suman   suman    62 Oct 15 18:43 suman
-  drwx------. 2 tom     tom      62 Oct 15 18:43 tom
-drwx------. 4 vagrant vagrant 154 Oct 15 17:45 vagrant
+      [vagrant@localhost ~]$ useradd suman
+      -bash: /usr/sbin/useradd: Permission denied
+      [vagrant@localhost ~]$ sudo useradd suman
+      [vagrant@localhost ~]$ ls -l /home/
+      total 0
+      drwx------. 2 suman   suman    62 Oct 15 18:43 suman
+      drwx------. 4 vagrant vagrant 154 Oct 15 17:45 vagrant
+      [vagrant@localhost ~]$ sudo useradd tom
+      [vagrant@localhost ~]$ ls -l /home/
+      total 0
+      drwx------. 2 suman   suman    62 Oct 15 18:43 suman
+      drwx------. 2 tom     tom      62 Oct 15 18:43 tom
+      drwx------. 4 vagrant vagrant 154 Oct 15 17:45 vagrant
 
 # Also to see all the users open passwd
 
-  [vagrant@localhost ~]$ vi /etc/passwd
-  [vagrant@localhost ~]$ groupadd users
-  -bash: /usr/sbin/groupadd: Permission denied
+    [vagrant@localhost ~]$ vi /etc/passwd
+    [vagrant@localhost ~]$ groupadd users
+    -bash: /usr/sbin/groupadd: Permission denied
   
 [vagrant@localhost ~]$ sudo groupadd Allusers
 [vagrant@localhost ~]$ vi /etc/passwd/group

@@ -72,98 +72,97 @@ VM, run `vagrant status NAME`.
 
 # To Login to linux machine
 
-PS C:\Users\suman\Desktop\Bacloudsystems\Vagrant> vagrant ssh linux
+    PS C:\Users\suman\Desktop\Bacloudsystems\Vagrant> vagrant ssh linux
 
 # Create a file and edit file using vi editor
 
 ### To write in vi editor press i and start writing. To Save and exit the editor press ESC and :wq.
 
-
-[vagrant@localhost ~]$ vi file1.txt
+    [vagrant@localhost ~]$ vi file1.txt
 
 #To see the content of the file use cat command
 
-[vagrant@localhost ~]$ cat file1.txt
+    [vagrant@localhost ~]$ cat file1.txt
 
-This is my first file in linux machine created through machine.
+    This is my first file in linux machine created through machine.
 
-This is the second line
+    This is the second line
 
 # To create a file without opening use touch command
 
-[vagrant@localhost ~]$ touch file2.txt
+    [vagrant@localhost ~]$ touch file2.txt
 
 # To view the current directory use pwd command
 
-[vagrant@localhost ~]$ pwd
+    [vagrant@localhost ~]$ pwd
 
-/home/vagrant
+    /home/vagrant
 
 # To view the list of files and the directory use ls command
 
-[vagrant@localhost ~]$ ls
+    [vagrant@localhost ~]$ ls
 
-file1.txt  file2.txt
+    file1.txt  file2.txt
 
 # To view the the list of files and the directory with permissions use ls-l command
 
-[vagrant@localhost ~]$ ls -l
+    [vagrant@localhost ~]$ ls -l
 
-total 4
+    total 4
 
--rw-rw-r--. 1 vagrant vagrant 90 Oct 15 17:10 file1.txt
+    -rw-rw-r--. 1 vagrant vagrant 90 Oct 15 17:10 file1.txt
 
--rw-rw-r--. 1 vagrant vagrant  0 Oct 15 17:11 file2.txt
+    -rw-rw-r--. 1 vagrant vagrant  0 Oct 15 17:11 file2.txt
  
-[vagrant@localhost ~]$ vi file2.txt
+    [vagrant@localhost ~]$ vi file2.txt
 
-[vagrant@localhost ~]$ cat file2.txt
+    [vagrant@localhost ~]$ cat file2.txt
 
-This is the second file
+    This is the second file
 
 # To make a directory use mkdir command
-[vagrant@localhost ~]$ mkdir dir1
+    [vagrant@localhost ~]$ mkdir dir1
 
-[vagrant@localhost ~]$ ls -l
+    [vagrant@localhost ~]$ ls -l
 
-total 8
+    total 8
 
-drwxrwxr-x. 2 vagrant vagrant  6 Oct 15 17:43 dir1
+    drwxrwxr-x. 2 vagrant vagrant  6 Oct 15 17:43 dir1
 
--rw-rw-r--. 1 vagrant vagrant 90 Oct 15 17:10 file1.txt
+    -rw-rw-r--. 1 vagrant vagrant 90 Oct 15 17:10 file1.txt
 
--rw-rw-r--. 1 vagrant vagrant 25 Oct 15 17:42 file2.txt
+    -rw-rw-r--. 1 vagrant vagrant 25 Oct 15 17:42 file2.txt
 
-[vagrant@localhost ~]$ mkdir dir2
+    [vagrant@localhost ~]$ mkdir dir2
 
 # To remove directory use rmdir
 
-[vagrant@localhost ~]$ rmdir dir2
+    [vagrant@localhost ~]$ rmdir dir2
 
 # Touch commands also can be used to create multiple files at the same time
 
-[vagrant@localhost ~]$ touch file3.txt file4.txt
+    [vagrant@localhost ~]$ touch file3.txt file4.txt
 
-[vagrant@localhost ~]$ ls
+    [vagrant@localhost ~]$ ls
 
-dir1  file1.txt  file2.txt  file3.txt  file4.txt
+    dir1  file1.txt  file2.txt  file3.txt  file4.txt
 
-[vagrant@localhost ~]$ cat file3.txt
+    [vagrant@localhost ~]$ cat file3.txt
 
 # To write inside the file without opening the file use echo command and to specify the file use single > sign
 
-[vagrant@localhost ~]$ echo "this is file3" >file3.txt
+    [vagrant@localhost ~]$ echo "this is file3" >file3.txt
 
-[vagrant@localhost ~]$ cat file3.txt
+    [vagrant@localhost ~]$ cat file3.txt
 
-this is file3
+    this is file3
 
 # To write in second line without opening the file use echo command and two >> sign
 
-[vagrant@localhost ~]$ echo "this is second line in file3">>file3.txt
+    [vagrant@localhost ~]$ echo "this is second line in file3">>file3.txt
 
-[vagrant@localhost ~]$ cat file3.txt
+    [vagrant@localhost ~]$ cat file3.txt
 
-this is file3
+    this is file3
 
-this is second line in file3
+    this is second line in file3

@@ -2,73 +2,77 @@
 
 # Run vagrant up to start virtualization from the directory where there is vagrantfile  
 
-PS C:\Users\suman\Desktop\Bacloudsystems\Vagrant> vagrant up
+    PS C:\Users\suman\Desktop\Bacloudsystems\Vagrant> vagrant up
 
-Bringing machine 'linux' up with 'virtualbox' provider...
+    Bringing machine 'linux' up with 'virtualbox' provider...
 
-Bringing machine 'sshmachine' up with 'virtualbox' provider...
+    Bringing machine 'sshmachine' up with 'virtualbox' provider...
 
-==> linux: Checking if box 'centos/7' version '1905.1' is up to date...
+    ==> linux: Checking if box 'centos/7' version '1905.1' is up to date...
 
-==> linux: Machine already provisioned. Run `vagrant provision` or use the `--provision`
+    ==> linux: Machine already provisioned. Run `vagrant provision` or use the `--provision`
 
-==> linux: flag to force provisioning. Provisioners marked to run always will still run.
+    ==> linux: flag to force provisioning. Provisioners marked to run always will still run.
 
-==> sshmachine: Checking if box 'centos/7' version '1905.1' is up to date...
+    ==> sshmachine: Checking if box 'centos/7' version '1905.1' is up to date...
 
-==> sshmachine: Clearing any previously set forwarded ports...
+    ==> sshmachine: Clearing any previously set forwarded ports...
 
-==> sshmachine: Fixed port collision for 22 => 2222. Now on port 2200.
+    ==> sshmachine: Fixed port collision for 22 => 2222. Now on port 2200.
 
-==> sshmachine: Clearing any previously set network interfaces...
+    ==> sshmachine: Clearing any previously set network interfaces...
 
-==> sshmachine: Preparing network interfaces based on configuration...
+    ==> sshmachine: Preparing network interfaces based on configuration...
 
-    sshmachine: Adapter 1: nat
-    
-    sshmachine: Adapter 2: hostonly
-    
-==> sshmachine: Forwarding ports...
+        sshmachine: Adapter 1: nat
 
-    sshmachine: 22 (guest) => 2200 (host) (adapter 1)
-    
-==> sshmachine: Running 'pre-boot' VM customizations...
+        sshmachine: Adapter 2: hostonly
 
-==> sshmachine: Booting VM...
+    ==> sshmachine: Forwarding ports...
 
-There was an error while executing `VBoxManage`, a CLI used by Vagrant
+        sshmachine: 22 (guest) => 2200 (host) (adapter 1)
 
-for controlling VirtualBox. The command and stderr is shown below.
+    ==> sshmachine: Running 'pre-boot' VM customizations...
 
+    ==> sshmachine: Booting VM...
 
-Command: ["startvm", "7c03535a-a17f-49dc-9874-87aff30ef059", "--type", "headless"]
+    There was an error while executing `VBoxManage`, a CLI used by Vagrant
+
+    for controlling VirtualBox. The command and stderr is shown below.
 
 
-Stderr: VBoxManage.exe: error: Failed to open/create the internal network 'HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter 
+    Command: ["startvm", "7c03535a-a17f-49dc-9874-87aff30ef059", "--type", "headless"]
 
-#2' (VERR_INTNET_FLT_IF_NOT_FOUND).
 
-VBoxManage.exe: error: Failed to attach the network LUN (VERR_INTNET_FLT_IF_NOT_FOUND)
+    Stderr: VBoxManage.exe: error: Failed to open/create the internal network 'HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter 
 
-VBoxManage.exe: error: Details: code E_FAIL (0x80004005), component ConsoleWrap, interface IConsole
+    #2' (VERR_INTNET_FLT_IF_NOT_FOUND).
+
+    VBoxManage.exe: error: Failed to attach the network LUN (VERR_INTNET_FLT_IF_NOT_FOUND)
+
+    VBoxManage.exe: error: Details: code E_FAIL (0x80004005), component ConsoleWrap, interface IConsole
+
+# To fix the above error  #2' (VERR_INTNET_FLT_IF_NOT_FOUND) go to your virtual box and then settings. Under setting go to netwok disable network adaptor of adaptor2
 
 PS C:\Users\suman\Desktop\Bacloudsystems\Vagrant>
 
+# To see the status of the Vms use vagrant status
+
 PS C:\Users\suman\Desktop\Bacloudsystems\Vagrant> vagrant status
 
-Current machine states:
+    Current machine states:
 
 
-linux                     running (virtualbox)
+    linux                     running (virtualbox)
 
-sshmachine                poweroff (virtualbox)
+    sshmachine                poweroff (virtualbox)
 
 
-This environment represents multiple VMs. The VMs are all listed
+    This environment represents multiple VMs. The VMs are all listed
 
-above with their current state. For more information about a specific
+    above with their current state. For more information about a specific
 
-VM, run `vagrant status NAME`.
+        VM, run `vagrant status NAME`.
 
 # To Login to linux machine
 

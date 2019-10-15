@@ -81,3 +81,25 @@
       -rw-rw-r--. 1 vagrant vagrant  0 Oct 15 17:45 file4.txt
       [vagrant@localhost dir1]$ cd dir1/
       [vagrant@localhost dir1]$
+      
+# To change permision use +(add) and -(negative) sign with chmod command 
+      [vagrant@localhost ~]$ touch firstshell.sh
+      [vagrant@localhost ~]$ ls -l
+      total 12
+      drwxrwxr-x. 2 vagrant vagrant  6 Oct 15 17:43 dir1
+      -rw-rw-r--. 1 vagrant vagrant  0 Oct 15 19:36 firstshell.sh
+      
+### To remove permission use negative - sign
+      [vagrant@localhost ~]$ chmod o-r firstshell.sh
+      [vagrant@localhost ~]$ ls -l
+      total 12
+      drwxrwxr-x. 2 vagrant vagrant  6 Oct 15 17:43 dir1
+      -rw-rw----. 1 vagrant vagrant  0 Oct 15 19:36 firstshell.sh
+      [vagrant@localhost ~]$
+      
+### To add permission use pluse + sign
+      [vagrant@localhost ~]$ chmod o+r firstshell.sh
+      [vagrant@localhost ~]$ ls -l
+      total 12
+      drwxrwxr-x. 2 vagrant vagrant  6 Oct 15 17:43 dir1
+      -rw-rw-r--. 1 vagrant vagrant  0 Oct 15 19:36 firstshell.sh

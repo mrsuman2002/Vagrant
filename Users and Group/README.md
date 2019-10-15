@@ -53,10 +53,10 @@
       [suman@localhost vagrant]$ exit
       exit
 # To switch into the user directory use su and - suman command
-[vagrant@localhost ~]$ su - suman
-Password:
-Last login: Tue Oct 15 18:57:23 UTC 2019 on pts/0
-[suman@localhost ~]$ ls
-[suman@localhost ~]$ pwd
-/home/suman
-[suman@localhost ~]$
+      [vagrant@localhost ~]$ su - suman
+      Password:
+      Last login: Tue Oct 15 18:57:23 UTC 2019 on pts/0
+      [suman@localhost ~]$ ls
+      [suman@localhost ~]$ pwd
+      /home/suman
+      [suman@localhost ~]$

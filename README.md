@@ -76,8 +76,8 @@ PS C:\Users\suman\Desktop\Bacloudsystems\Vagrant> vagrant ssh linux
 
 # Create a file and edit file using vi editor
 
-# To write in vi editor press i and start writing. To Save and exit the editor press ESC and :wq.
-# ----------------------------------------------------------------------------------------------------
+### To write in vi editor press i and start writing. To Save and exit the editor press ESC and :wq.
+
 
 [vagrant@localhost ~]$ vi file1.txt
 

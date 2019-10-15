@@ -1,5 +1,7 @@
 # Vagrant
 
+# Run vagrant up to start virtualization from the directory where there is vagrantfile  
+
 PS C:\Users\suman\Desktop\Bacloudsystems\Vagrant> vagrant up
 
 Bringing machine 'linux' up with 'virtualbox' provider...
@@ -72,9 +74,10 @@ VM, run `vagrant status NAME`.
 
 PS C:\Users\suman\Desktop\Bacloudsystems\Vagrant> vagrant ssh linux
 
-# create a file and edit file using vi editor
+# Create a file and edit file using vi editor
 
-To write in vi editor press i and start writing. To Save and exit the editor press ESC and :wq.
+# To write in vi editor press i and start writing. To Save and exit the editor press ESC and :wq.
+# ----------------------------------------------------------------------------------------------------
 
 [vagrant@localhost ~]$ vi file1.txt
 

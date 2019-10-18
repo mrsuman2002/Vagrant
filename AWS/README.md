@@ -82,44 +82,44 @@
 
     Complete!
 # To install AWS CLI
-   [vagrant@linux ~]$ sudo pip install awscli
-    Collecting awscli
-      Downloading https://files.pythonhosted.org/packages/8c/c1/61b505fce21669a0f7bf8973fe8a508e6537e4d5786d430bfd7ed023a9e1/awscli-1.16.262-py2.py3-none-any.whl (2.3MB)
-        100% |████████████████████████████████| 2.4MB 242kB/s
-    Collecting docutils<0.16,>=0.10 (from awscli)
-      Downloading https://files.pythonhosted.org/packages/3a/dc/bf2b15d1fa15a6f7a9e77a61b74ecbbae7258558fcda8ffc9a6638a6b327/docutils-0.15.2-py2-none-any.whl (548kB)
-        100% |████████████████████████████████| 552kB 534kB/s
-    Collecting PyYAML<5.2,>=3.10; python_version != "2.6" and python_version != "3.3" (from awscli)
-      Downloading https://files.pythonhosted.org/packages/e3/e8/b3212641ee2718d556df0f23f78de8303f068fe29cdaa7a91018849582fe/PyYAML-5.1.2.tar.gz (265kB)
-        100% |████████████████████████████████| 266kB 759kB/s
-    Collecting rsa<=3.5.0,>=3.1.2 (from awscli)
-      Downloading https://files.pythonhosted.org/packages/e1/ae/baedc9cb175552e95f3395c43055a6a5e125ae4d48a1d7a924baca83e92e/rsa-3.4.2-py2.py3-none-any.whl (46kB)
-        100% |████████████████████████████████| 51kB 792kB/s
-    Collecting colorama<0.4.2,>=0.2.5; python_version != "2.6" and python_version != "3.3" (from awscli)
-      Downloading https://files.pythonhosted.org/packages/4f/a6/728666f39bfff1719fc94c481890b2106837da9318031f71a8424b662e12/colorama-0.4.1-py2.py3-none-any.whl
-    Collecting s3transfer<0.3.0,>=0.2.0 (from awscli)
-      Downloading https://files.pythonhosted.org/packages/16/8a/1fc3dba0c4923c2a76e1ff0d52b305c44606da63f718d14d3231e21c51b0/s3transfer-0.2.1-py2.py3-none-any.whl (70kB)
-        100% |████████████████████████████████| 71kB 730kB/s
-    Collecting botocore==1.12.252 (from awscli)
-      Downloading https://files.pythonhosted.org/packages/87/7d/58613fb1b75254770767f1e5e37f812ba27e9bac7d2bd8446dcae6f4d44e/botocore-1.12.252-py2.py3-none-any.whl (5.7MB)
-        100% |████████████████████████████████| 5.8MB 76kB/s
-    Collecting pyasn1>=0.1.3 (from rsa<=3.5.0,>=3.1.2->awscli)
-      Downloading https://files.pythonhosted.org/packages/a1/71/8f0d444e3a74e5640a3d5d967c1c6b015da9c655f35b2d308a55d907a517/pyasn1-0.4.7-py2.py3-none-any.whl (76kB)
-        100% |████████████████████████████████| 81kB 780kB/s
-    Collecting futures<4.0.0,>=2.2.0; python_version == "2.6" or python_version == "2.7" (from s3transfer<0.3.0,>=0.2.0->awscli)
-      Downloading https://files.pythonhosted.org/packages/d8/a6/f46ae3f1da0cd4361c344888f59ec2f5785e69c872e175a748ef6071cdb5/futures-3.3.0-py2-none-any.whl
-    Collecting jmespath<1.0.0,>=0.7.1 (from botocore==1.12.252->awscli)
-      Downloading https://files.pythonhosted.org/packages/83/94/7179c3832a6d45b266ddb2aac329e101367fbdb11f425f13771d27f225bb/jmespath-0.9.4-py2.py3-none-any.whl
-    Collecting python-dateutil<3.0.0,>=2.1; python_version >= "2.7" (from botocore==1.12.252->awscli)
-      Downloading https://files.pythonhosted.org/packages/41/17/c62faccbfbd163c7f57f3844689e3a78bae1f403648a6afb1d0866d87fbb/python_dateutil-2.8.0-py2.py3-none-any.whl (226kB)
-        100% |████████████████████████████████| 235kB 543kB/s
-    Collecting urllib3<1.26,>=1.20; python_version == "2.7" (from botocore==1.12.252->awscli)
-      Downloading https://files.pythonhosted.org/packages/e0/da/55f51ea951e1b7c63a579c09dd7db825bb730ec1fe9c0180fc77bfb31448/urllib3-1.25.6-py2.py3-none-any.whl (125kB)
-        100% |████████████████████████████████| 133kB 708kB/s
-    Collecting six>=1.5 (from python-dateutil<3.0.0,>=2.1; python_version >= "2.7"->botocore==1.12.252->awscli)
-      Downloading https://files.pythonhosted.org/packages/73/fb/00a976f728d0d1fecfe898238ce23f502a721c0ac0ecfedb80e0d88c64e9/six-1.12.0-py2.py3-none-any.whl
-    Installing collected packages: docutils, PyYAML, pyasn1, rsa, colorama, futures, jmespath, six, python-dateutil, urllib3, botocore, s3transfer, awscli
-      Running setup.py install for PyYAML ... done
-    Successfully installed PyYAML-5.1.2 awscli-1.16.262 botocore-1.12.252 colorama-0.4.1 docutils-0.15.2 futures-3.3.0 jmespath-0.9.4 pyasn1-0.4.7 python-dateutil-2.8.0 rsa-3.4.2 s3transfer-0.2.1 six-1.12.0 urllib3-1.25.6
-    You are using pip version 8.1.2, however version 19.3 is available.
-    You should consider upgrading via the 'pip install --upgrade pip' command.
+       [vagrant@linux ~]$ sudo pip install awscli
+        Collecting awscli
+          Downloading https://files.pythonhosted.org/packages/8c/c1/61b505fce21669a0f7bf8973fe8a508e6537e4d5786d430bfd7ed023a9e1/awscli-1.16.262-py2.py3-none-any.whl (2.3MB)
+            100% |████████████████████████████████| 2.4MB 242kB/s
+        Collecting docutils<0.16,>=0.10 (from awscli)
+          Downloading https://files.pythonhosted.org/packages/3a/dc/bf2b15d1fa15a6f7a9e77a61b74ecbbae7258558fcda8ffc9a6638a6b327/docutils-0.15.2-py2-none-any.whl (548kB)
+            100% |████████████████████████████████| 552kB 534kB/s
+        Collecting PyYAML<5.2,>=3.10; python_version != "2.6" and python_version != "3.3" (from awscli)
+          Downloading https://files.pythonhosted.org/packages/e3/e8/b3212641ee2718d556df0f23f78de8303f068fe29cdaa7a91018849582fe/PyYAML-5.1.2.tar.gz (265kB)
+            100% |████████████████████████████████| 266kB 759kB/s
+        Collecting rsa<=3.5.0,>=3.1.2 (from awscli)
+          Downloading https://files.pythonhosted.org/packages/e1/ae/baedc9cb175552e95f3395c43055a6a5e125ae4d48a1d7a924baca83e92e/rsa-3.4.2-py2.py3-none-any.whl (46kB)
+            100% |████████████████████████████████| 51kB 792kB/s
+        Collecting colorama<0.4.2,>=0.2.5; python_version != "2.6" and python_version != "3.3" (from awscli)
+          Downloading https://files.pythonhosted.org/packages/4f/a6/728666f39bfff1719fc94c481890b2106837da9318031f71a8424b662e12/colorama-0.4.1-py2.py3-none-any.whl
+        Collecting s3transfer<0.3.0,>=0.2.0 (from awscli)
+          Downloading https://files.pythonhosted.org/packages/16/8a/1fc3dba0c4923c2a76e1ff0d52b305c44606da63f718d14d3231e21c51b0/s3transfer-0.2.1-py2.py3-none-any.whl (70kB)
+            100% |████████████████████████████████| 71kB 730kB/s
+        Collecting botocore==1.12.252 (from awscli)
+          Downloading https://files.pythonhosted.org/packages/87/7d/58613fb1b75254770767f1e5e37f812ba27e9bac7d2bd8446dcae6f4d44e/botocore-1.12.252-py2.py3-none-any.whl (5.7MB)
+            100% |████████████████████████████████| 5.8MB 76kB/s
+        Collecting pyasn1>=0.1.3 (from rsa<=3.5.0,>=3.1.2->awscli)
+          Downloading https://files.pythonhosted.org/packages/a1/71/8f0d444e3a74e5640a3d5d967c1c6b015da9c655f35b2d308a55d907a517/pyasn1-0.4.7-py2.py3-none-any.whl (76kB)
+            100% |████████████████████████████████| 81kB 780kB/s
+        Collecting futures<4.0.0,>=2.2.0; python_version == "2.6" or python_version == "2.7" (from s3transfer<0.3.0,>=0.2.0->awscli)
+          Downloading https://files.pythonhosted.org/packages/d8/a6/f46ae3f1da0cd4361c344888f59ec2f5785e69c872e175a748ef6071cdb5/futures-3.3.0-py2-none-any.whl
+        Collecting jmespath<1.0.0,>=0.7.1 (from botocore==1.12.252->awscli)
+          Downloading https://files.pythonhosted.org/packages/83/94/7179c3832a6d45b266ddb2aac329e101367fbdb11f425f13771d27f225bb/jmespath-0.9.4-py2.py3-none-any.whl
+        Collecting python-dateutil<3.0.0,>=2.1; python_version >= "2.7" (from botocore==1.12.252->awscli)
+          Downloading https://files.pythonhosted.org/packages/41/17/c62faccbfbd163c7f57f3844689e3a78bae1f403648a6afb1d0866d87fbb/python_dateutil-2.8.0-py2.py3-none-any.whl (226kB)
+            100% |████████████████████████████████| 235kB 543kB/s
+        Collecting urllib3<1.26,>=1.20; python_version == "2.7" (from botocore==1.12.252->awscli)
+          Downloading https://files.pythonhosted.org/packages/e0/da/55f51ea951e1b7c63a579c09dd7db825bb730ec1fe9c0180fc77bfb31448/urllib3-1.25.6-py2.py3-none-any.whl (125kB)
+            100% |████████████████████████████████| 133kB 708kB/s
+        Collecting six>=1.5 (from python-dateutil<3.0.0,>=2.1; python_version >= "2.7"->botocore==1.12.252->awscli)
+          Downloading https://files.pythonhosted.org/packages/73/fb/00a976f728d0d1fecfe898238ce23f502a721c0ac0ecfedb80e0d88c64e9/six-1.12.0-py2.py3-none-any.whl
+        Installing collected packages: docutils, PyYAML, pyasn1, rsa, colorama, futures, jmespath, six, python-dateutil, urllib3, botocore, s3transfer, awscli
+          Running setup.py install for PyYAML ... done
+        Successfully installed PyYAML-5.1.2 awscli-1.16.262 botocore-1.12.252 colorama-0.4.1 docutils-0.15.2 futures-3.3.0 jmespath-0.9.4 pyasn1-0.4.7 python-dateutil-2.8.0 rsa-3.4.2 s3transfer-0.2.1 six-1.12.0 urllib3-1.25.6
+        You are using pip version 8.1.2, however version 19.3 is available.
+        You should consider upgrading via the 'pip install --upgrade pip' command.
